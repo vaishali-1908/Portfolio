@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Profile</title>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"/>
+  
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light custom-navbar fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">My Portfolio</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse"
+        data-target="#navbarNav" aria-controls="navbarNav"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="profile.html">Profile</a></li>
+          <li class="nav-item"><a class="nav-link" href="achievements.html">Achievements</a></li>
+          <li class="nav-item"><a class="nav-link" href="interests.html">Interests</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="feedback.html">Feedback</a></li>
+          
+      </div>
+    </div>
+  </nav>
+
+
+  <section class="container profile-section py-5">
+    <div class="text-center mb-5">
+      <h2 class="text-primary">Profile & Strengths</h2>
+      <p class="lead">Here's a quick overview of my skills and key strengths.</p>
+    </div>
+
+    <div class="mb-4">
+      <h4><strong> Name: </strong> VAISHALI N</h4>
+      <h5><strong> Role: </strong> Aspiring Full Stack Developer</h5>
+      <p><strong> Location:</strong> TRICHY,INDIA</p>
+      
+    </div>
+
+    <h4 class="mt-5 mb-3 text-primary">Technical Skills</h4>
+
+<div class="skill-block">
+  <div class="skill-label"><i class="fab fa-html5"></i> Python</div>
+  <div class="skill-bar">
+    <div class="skill-bar-fill" data-percent="95%">95%</div>
+  </div>
+</div>
+
+<div class="skill-block">
+  <div class="skill-label"><i class="fab fa-js"></i>HTML/CSS/JavaScript </div>
+  <div class="skill-bar">
+    <div class="skill-bar-fill" data-percent="85%">85%</div>
+  </div>
+</div>
+
+<div class="skill-block">
+  <div class="skill-label"><i class="fab fa-bootstrap"></i> Bootstrap</div>
+  <div class="skill-bar">
+    <div class="skill-bar-fill" data-percent="75%">75%</div>
+  </div>
+</div>
+<div class="skill-block">
+  <div class="skill-label"><i class="fab fa-node-js"></i> Java</div>
+  <div class="skill-bar">
+    <div class="skill-bar-fill" data-percent="60%">60%</div>
+  </div>
+</div>
+    <div class="text-center mt-5">
+      <a href="images/resume.pdf" class="btn" download>Download My Resume</a>
+    </div>
+  </section>
+
+  
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    
+  $(document).ready(function () {
+    $('.skill-bar-fill').each(function () {
+      let percent = $(this).data('percent');
+      $(this).css('width', percent);
+    });
+  });
+</script>
+</body>
+</html>
+
+    
